@@ -10,15 +10,15 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  //paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  //New York
+  let newYorkElement = document.querySelector("#new-york");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector(".date");
+    let newYorkTimeElement = newYorkElement.querySelector(".time");
+    let newYorkTime = moment().tz("America/New_York");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM Do, YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do, YYYY");
+    newYorkTimeElement.innerHTML = newYorkTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
